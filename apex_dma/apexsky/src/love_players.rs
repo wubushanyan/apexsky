@@ -161,7 +161,7 @@ pub(crate) fn get_players() -> HashMap<u64, CPlayerInfo> {
 
 #[no_mangle]
 pub extern "C" fn check_love_player(puid: u64, euid: u64, name: *const i8, entity_ptr: u64) -> i32 {
-    let c_str = unsafe { std::ffi::CStr::from_ptr(name) };
+    let c_str = unsafe { std::ffi::CStr::from_ptr(name as *const u8) };
     let name_str = c_str.to_string_lossy();
     check_my_heart(
         &mut crate::lock_config!(),
