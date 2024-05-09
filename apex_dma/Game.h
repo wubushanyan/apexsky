@@ -188,4 +188,29 @@ private:
 
 public:
 }; // Size: 0x34
+
+{
+uint64_t Base_index = 50;
+uint64_t HIGHLIGHT_LOOT_HEAVY = Base_index + 0;
+uint64_t HIGHLIGHT_LOOT_LIGHT = Base_index + 1;
+uint64_t HIGHLIGHT_LOOT_RED = Base_index + 2;
+uint64_t HIGHLIGHT_LOOT_BLUE = Base_index + 3;
+uint64_t HIGHLIGHT_LOOT_GREY = Base_index + 4;
+uint64_t HIGHLIGHT_LOOT_WHITE = Base_index + 5;
+uint64_t HIGHLIGHT_LOOT_ENERGY = Base_index + 6;
+uint64_t HIGHLIGHT_LOOT_PURPLE = Base_index + 7;
+uint64_t HIGHLIGHT_LOOT_GOLD = Base_index + 8;
+uint64_t HIGHLIGHT_DEATH_BOX = Base_index + 9;
+uint64_t HIGHLIGHT_PLAYER_KNOCKED = Base_index + 10;
+uint64_t HIGHLIGHT_PLAYER_VISIBLE = Base_index + 11;
+uint64_t HIGHLIGHT_PLAYER_NOTVIZ = Base_index + 12;
+uint64_t HIGHLIGHT_PLAYER_BLACK = Base_index + 13;
+uint64_t HIGHLIGHT_PLAYER_ORANGE = Base_index + 14;
+uint64_t HIGHLIGHT_PLAYER_WHITE = Base_index + 15;
+uint64_t HIGHLIGHT_PLAYER_BLUE = Base_index + 16;
+uint64_t HIGHLIGHT_PLAYER_PURPLE = Base_index + 17;
+uint64_t HIGHLIGHT_PLAYER_RED = Base_index + 18;
+uint64_t HIGHLIGHT_PLAYER_RAINBOW = Base_index + 19;
+}
+
 #pragma pack(pop)
